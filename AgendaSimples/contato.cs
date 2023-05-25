@@ -3,63 +3,85 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
-namespace AgendaSimples
+namespace agenda_simples_t5
 {
-    internal class contato
+    internal class Contato
     {
+        // Variáveis locais da classe Contato.
+        // Acessíveis apenas pela classe Contato.
         private string primeiroNome;
         private string sobrenome;
         private string telefone;
+        private string email;
 
+        // PROPRIEDADES da classe Contato.
+        // Acessíveis por qualquer parte desse programa.
         public string PrimeiroNome
         {
-            get { return primeiroNome; }    
-            set { primeiroNome = value; }   
+            get { return primeiroNome; }
+            set { primeiroNome = value; }
         }
-
         public string Sobrenome
-        { 
+        {
             get { return sobrenome; }
             set { sobrenome = value; }
         }
-         public string Telefone
+        public string Telefone
         {
             get { return telefone; }
-                        set
-            {
-                if(value.Length == 11)
+            set 
+            { 
+                if (value.Length == 11)
                 {
-                    Telefone = value;
+                    telefone = value;
                 }
                 else
                 {
-                    Telefone = "00-00000-0000";
+                    telefone = "00000000000";
                 }
             }
         }
-        public contato()
-        {
-            PrimeiroNome = "José";
-            Sobrenome = "Da Silva";
-            Telefone = "11-91234-5678";
-        }
 
-        public contato(string primeironome, string sobrenome, string telefone)
+        public string Email
         {
-            PrimeiroNome = primeironome;
+            get { return email; }
+            set { email = value; }
+        }
+        
+        // Construtor da classe.
+        public Contato()
+        {
+            PrimeiroNome = "João";
+            Sobrenome = "Da Silva";
+            Telefone = "11988888776";
+            Email = "exemplo@exemplo.com";
+        }
+        // Sobrecarga de método.
+        public Contato(string primeiroNome, string sobrenome, string telefone, string email)
+        {
+            PrimeiroNome = primeiroNome;
             Sobrenome = sobrenome;
             Telefone = telefone;
+            Email = email;
         }
 
+        // Sobreescrita do método ToString().
         public override string ToString()
         {
+            // Melhor utilizar String.Empty invés de "".
             string saida = String.Empty;
-            saida += string.Format("{0}, {1}", PrimeiroNome, Sobrenome);
-            saida += string.Format("{0}-{1}-{2}",
-                Telefone.Substring(0,1),
-                Telefone.Substring(2,4),
-                Telefone.Substring(7,3));
+            saida += String.Format("{0} {1}", PrimeiroNome, Sobrenome);
+            saida += " ";
+            saida += String.Format("{0}-{1}-{2}", 
+                Telefone.Substring(0,2),
+                Telefone.Substring(2,5),
+                Telefone.Substring(7,4)
+                );
+            saida += " "; // Apenas um espaço entre o telefone e e-mail.
+            saida += String.Format("{0}", Email);
+
             return saida;
         }
     }

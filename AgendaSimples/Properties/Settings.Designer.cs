@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AgendaSimples.Properties
+namespace agenda_simples_t5.Properties
 {
 
 

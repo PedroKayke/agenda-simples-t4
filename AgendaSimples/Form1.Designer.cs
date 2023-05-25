@@ -1,4 +1,4 @@
-﻿namespace AgendaSimples
+﻿namespace agenda_simples_t5
 {
     partial class Form1
     {
@@ -28,104 +28,133 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Label1 = new System.Windows.Forms.Label();
-            this.Label2 = new System.Windows.Forms.Label();
-            this.Label3 = new System.Windows.Forms.Label();
-            this.TxtNome = new System.Windows.Forms.TextBox();
-            this.TxtSobrenome = new System.Windows.Forms.TextBox();
-            this.TxtTelefone = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtSobrenome = new System.Windows.Forms.TextBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
+            this.btnAddContato = new System.Windows.Forms.Button();
+            this.lstContatos = new System.Windows.Forms.ListBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnOrdenar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Label1
+            // label1
             // 
-            this.Label1.AutoSize = true;
-            this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label1.Location = new System.Drawing.Point(13, 13);
-            this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(68, 25);
-            this.Label1.TabIndex = 0;
-            this.Label1.Text = "Nome";
-            this.Label1.Click += new System.EventHandler(this.Label1_Click_1);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(33, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nome";
             // 
-            // Label2
+            // label2
             // 
-            this.Label2.AutoSize = true;
-            this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label2.Location = new System.Drawing.Point(12, 53);
-            this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(122, 25);
-            this.Label2.TabIndex = 1;
-            this.Label2.Text = "Sobrenome";
-            this.Label2.Click += new System.EventHandler(this.label1_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(33, 105);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Sobrenome";
             // 
-            // Label3
+            // label3
             // 
-            this.Label3.AutoSize = true;
-            this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label3.Location = new System.Drawing.Point(13, 97);
-            this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(96, 25);
-            this.Label3.TabIndex = 2;
-            this.Label3.Text = "Telefone";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(33, 174);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Telefone";
             // 
-            // TxtNome
+            // txtNome
             // 
-            this.TxtNome.Location = new System.Drawing.Point(172, 13);
-            this.TxtNome.Name = "TxtNome";
-            this.TxtNome.Size = new System.Drawing.Size(100, 20);
-            this.TxtNome.TabIndex = 3;
+            this.txtNome.Location = new System.Drawing.Point(135, 48);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(100, 20);
+            this.txtNome.TabIndex = 3;
             // 
-            // TxtSobrenome
+            // txtSobrenome
             // 
-            this.TxtSobrenome.Location = new System.Drawing.Point(172, 59);
-            this.TxtSobrenome.Name = "TxtSobrenome";
-            this.TxtSobrenome.Size = new System.Drawing.Size(100, 20);
-            this.TxtSobrenome.TabIndex = 4;
+            this.txtSobrenome.Location = new System.Drawing.Point(135, 105);
+            this.txtSobrenome.Name = "txtSobrenome";
+            this.txtSobrenome.Size = new System.Drawing.Size(100, 20);
+            this.txtSobrenome.TabIndex = 4;
             // 
-            // TxtTelefone
+            // txtTelefone
             // 
-            this.TxtTelefone.Location = new System.Drawing.Point(172, 103);
-            this.TxtTelefone.Name = "TxtTelefone";
-            this.TxtTelefone.Size = new System.Drawing.Size(100, 20);
-            this.TxtTelefone.TabIndex = 5;
-            this.TxtTelefone.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtTelefone.Location = new System.Drawing.Point(135, 174);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(100, 20);
+            this.txtTelefone.TabIndex = 5;
             // 
-            // listBox1
+            // btnAddContato
             // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(469, 32);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(282, 379);
-            this.listBox1.TabIndex = 6;
+            this.btnAddContato.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddContato.Location = new System.Drawing.Point(37, 288);
+            this.btnAddContato.Name = "btnAddContato";
+            this.btnAddContato.Size = new System.Drawing.Size(198, 53);
+            this.btnAddContato.TabIndex = 6;
+            this.btnAddContato.Text = "Inserir Contato";
+            this.btnAddContato.UseVisualStyleBackColor = true;
+            this.btnAddContato.Click += new System.EventHandler(this.btnAddContato_Click);
             // 
-            // button1
+            // lstContatos
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(18, 185);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(254, 59);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Inserir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.lstContatos.FormattingEnabled = true;
+            this.lstContatos.Location = new System.Drawing.Point(295, 43);
+            this.lstContatos.Name = "lstContatos";
+            this.lstContatos.Size = new System.Drawing.Size(280, 212);
+            this.lstContatos.TabIndex = 7;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(135, 231);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(33, 231);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 20);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "E-Mail";
+            // 
+            // btnOrdenar
+            // 
+            this.btnOrdenar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdenar.Location = new System.Drawing.Point(342, 288);
+            this.btnOrdenar.Name = "btnOrdenar";
+            this.btnOrdenar.Size = new System.Drawing.Size(198, 53);
+            this.btnOrdenar.TabIndex = 10;
+            this.btnOrdenar.Text = "Ordenar";
+            this.btnOrdenar.UseVisualStyleBackColor = true;
+            this.btnOrdenar.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.TxtTelefone);
-            this.Controls.Add(this.TxtSobrenome);
-            this.Controls.Add(this.TxtNome);
-            this.Controls.Add(this.Label3);
-            this.Controls.Add(this.Label2);
-            this.Controls.Add(this.Label1);
+            this.ClientSize = new System.Drawing.Size(622, 375);
+            this.Controls.Add(this.btnOrdenar);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lstContatos);
+            this.Controls.Add(this.btnAddContato);
+            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.txtSobrenome);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -136,14 +165,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Label1;
-        private System.Windows.Forms.Label Label2;
-        private System.Windows.Forms.Label Label3;
-        private System.Windows.Forms.TextBox TxtNome;
-        private System.Windows.Forms.TextBox TxtSobrenome;
-        private System.Windows.Forms.TextBox TxtTelefone;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtSobrenome;
+        private System.Windows.Forms.TextBox txtTelefone;
+        private System.Windows.Forms.Button btnAddContato;
+        private System.Windows.Forms.ListBox lstContatos;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnOrdenar;
     }
 }
 

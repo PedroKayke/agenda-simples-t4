@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AgendaSimples
+namespace agenda_simples_t5
 {
     internal static class Program
     {

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7D22E698-67E9-483E-B9BC-1A492DD0F825}</ProjectGuid>
+    <ProjectGuid>{6BD958D8-31C3-47F1-8741-94D3FAC90163}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>AgendaSimples</RootNamespace>
-    <AssemblyName>AgendaSimples</AssemblyName>
+    <RootNamespace>agenda_simples_t5</RootNamespace>
+    <AssemblyName>agenda-simples-t5</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="contato.cs" />
+    <Compile Include="Contato.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaSimples", "AgendaSimples.csproj", "{7D22E698-67E9-483E-B9BC-1A492DD0F825}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agenda-simples-t5", "agenda-simples-t5.csproj", "{6BD958D8-31C3-47F1-8741-94D3FAC90163}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7D22E698-67E9-483E-B9BC-1A492DD0F825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D22E698-67E9-483E-B9BC-1A492DD0F825}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D22E698-67E9-483E-B9BC-1A492DD0F825}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D22E698-67E9-483E-B9BC-1A492DD0F825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BD958D8-31C3-47F1-8741-94D3FAC90163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BD958D8-31C3-47F1-8741-94D3FAC90163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BD958D8-31C3-47F1-8741-94D3FAC90163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BD958D8-31C3-47F1-8741-94D3FAC90163}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F8C4E327-5BA5-4203-801A-14B6A71138E3}
+		SolutionGuid = {00513FC5-4506-4F5A-8F66-39142334957F}
 	EndGlobalSection
 EndGlobal
